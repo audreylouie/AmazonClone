@@ -656,5 +656,37 @@ const products = [
       "apparel",
       "mens"
     ]
+  },
+  {
+    id: "ba392bf1-32nf-wn94-vv82-293bdj01na93k",
+    image: "images/products/backpack.jpg",
+    name: "Travel Backpack - Black",
+    rating: {
+      stars: 4.5,
+      count: 43
+    },
+    priceCents: 3200,
+    keywords: [
+      "backpack",
+      "school",
+      "camping",
+      "work",
+      "bags"
+    ]
+  },
+  {
+    id: "duw92n28-paj3-29f2-958n-mqg294bflu03",
+    image: "images/products/umbrella.jpg",
+    name: "Round Travel Umbrella - Forest Green",
+    rating: {
+      stars: 3.5,
+      count: 192
+    },
+    priceCents: 1800,
+    keywords: [
+      "travel",
+      "waterproof",
+      "umbrellas",
+    ]
   }
 ];
