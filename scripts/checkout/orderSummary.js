@@ -4,6 +4,7 @@ import  formatCurrency  from '.././utils/money.js';
 import dayjs from 'https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js';
 import {deliveryOptions, getDeliveryOption} from '../../data/deliveryOptions.js';
 import { renderPaymentSummary } from './paymentSummary.js';
+import { updateCartQuantity } from './checkoutHeader.js';
 
 export function renderOrderSummary(){
   updateCartQuantity();
@@ -142,15 +143,8 @@ export function renderOrderSummary(){
       else{
         alert('Quantity must be at least 0 and less than 1000');
       }
-      const container = document.querySelector(`.js-cart-item-container-${productId}`);
-      container.classList.remove('is-editing-quantity');
       renderOrderSummary();
       renderPaymentSummary();
-  }
-
-  function updateCartQuantity(){
-    const cartQuantity = calculateCartQuantity();
-    document.querySelector('.js-checkout-quantity').innerHTML = `${cartQuantity} items`;
   }
 
   document.querySelectorAll('.js-delivery-option').forEach((element)=>{
