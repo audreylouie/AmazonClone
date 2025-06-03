@@ -11,6 +11,7 @@ describe('test suite: renderOrderSummary', () => {
       <div class="js-checkout-header"></div>
       <div class="js-order-summary"></div>
       <div class="js-payment-summary"></div>
+      <div class="js-checkout-quantity"></div>
     `;
 
     spyOn(localStorage, 'getItem').and.callFake(() => {

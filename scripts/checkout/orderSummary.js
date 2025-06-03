@@ -6,7 +6,7 @@ import { renderPaymentSummary } from './paymentSummary.js';
 import { updateCartQuantity, renderCheckoutHeader } from './checkoutHeader.js';
 
 export function renderOrderSummary(){
-  //updateCartQuantity();
+  updateCartQuantity();
   let cartSummaryHTML = '';
 
   cart.forEach((cartItem)=>{
