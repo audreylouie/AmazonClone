@@ -101,3 +101,15 @@ function updateCartQuantity(){
   const cartQuantity = cart.calculateCartQuantity();
       document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
 }
+document.querySelector('.js-search-button').addEventListener('click', () => {
+  console.log('hi');
+const search = document.querySelector('.js-search-bar').value;
+window.location.href = `index.html?search=${encodeURIComponent(search)}`;
+});
+
+document.querySelector('.js-search-bar').addEventListener('keydown', (event) => {
+if (event.key === 'Enter') {
+  const search = document.querySelector('.js-search-bar').value;
+  window.location.href = `index.html?search=${encodeURIComponent(search)}`;
+}
+});
