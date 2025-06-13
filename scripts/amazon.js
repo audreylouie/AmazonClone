@@ -120,7 +120,7 @@ loadProducts(renderProductsGrid);
   document.querySelector('.js-search-button').addEventListener('click', () => {
     const search = document.querySelector('.js-search-bar').value;
     window.location.href = `amazon.html?search=${search}`;
-  })
+  });
 
   document.querySelector('.js-search-bar').addEventListener('keydown', (event) => {
     if(event.key === 'Enter'){
@@ -128,5 +128,5 @@ loadProducts(renderProductsGrid);
       window.location.href = `amazon.html?search=${search}`;
     }
    
-  })
+  });
 }
